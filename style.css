@@ -1,0 +1,107 @@
+ .fontT{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 20;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+ }
+ .bold{
+    font-weight: 700;
+ }
+ /*The First Page*/
+  nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin: 50px 200px;
+  }
+  #title{
+    font-size:45px;
+    font-weight:800;
+  }
+  ul{
+    display:flex;
+    align-items:center;
+    gap:40px;
+  }
+  ul>li{
+    list-style:none;
+    margin-right:20px;
+  }
+  li>a{
+    text-decoration:none;
+    font-size:20px;
+  }
+  .dark2{
+    color:#474747;
+  }
+  .dark3{
+    color:rgb(117, 117, 117);
+  }
+  .btn-p{
+    background-color:#FD6E0A;
+    color:white;
+    font-weight:700;
+    font-size:20px;
+    padding:18px 36px;
+    border-radius:5px;
+  }
+  .person{
+    margin-left:200px;
+    margin-top: 150px;
+  }
+  .person>h3{
+    font-size:25px;
+    font-weight:600;
+    margin-bottom:5px
+  }
+  .person>h1{
+    font-size:60px;
+    font-weight:700;
+    margin-top:5px;
+  }
+  .person>p{
+    font-size:20px;
+    font-weight:400;
+  }
+  .head-button{
+    margin-top:10px;
+  }
+  .head-button>button>a{
+    text-decoration:none;
+    color:white;
+    padding:10px 20px;
+  }
+
+  /*The Second Page*/
+
+  #about_Section{
+    margin: 150px 200px;
+    margin-top: 150px;
+    background-color: #FFF8F3;
+    height: 630px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #about_Box{
+    margin: 200px 150px;
+    background-color: white;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  #about_Box>p{
+    text-align: center;
+  }
+  .infoContact{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 40px;
+  }
