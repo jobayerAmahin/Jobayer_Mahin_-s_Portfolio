@@ -105,3 +105,18 @@
     text-align: center;
     gap: 40px;
   }
+
+  /*Footer Section*/
+  footer>section{
+    max-width: 1600px;
+    height: 780px;
+    background: rgb(255, 248, 243);
+    border: 3px solid red;
+    position: relative;
+  }
+  .footer_mid{
+    height: 520px;
+    width: 70%;
+    border: 3px solid red;
+    margin: 130px auto;
+  }
