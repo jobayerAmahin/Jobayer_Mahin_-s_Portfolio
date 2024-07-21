@@ -265,6 +265,25 @@
     border: 0px;
   }
 
+  /*Header section*/
+  @media screen and (max-width:576px) {
+    nav{
+      flex-direction: column;
+    }
+    #profile{
+      right: 50px;
+      top: 138px;
+      width: 250px;
+      height: 250px;
+     }
+     #headreImg{
+      width: 300px;
+      height: 200px;
+      right: 50px;
+      top: 120px;
+     }
+  }
+
   /*eduexp (footer) section Media Query*/
   @media screen and (max-width:576px) {
     .eduexp, .edu, .exp{
