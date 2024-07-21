@@ -9,7 +9,27 @@
  .bold{
     font-weight: 700;
  }
+ .hide{
+  display: none;
+ }
  /*The First Page*/
+ header{
+  position: relative;
+ }
+ #headreImg{
+  position: absolute; 
+  right: 50px;
+  top: 120px;
+ }
+ #profile{
+  position: absolute;
+  right: 50px;
+  top: 138px;
+  z-index: 1;
+  width: 500px;
+  height: 500px;
+ }
+
   nav{
     display:flex;
     align-items:center;
@@ -74,7 +94,7 @@
     padding:10px 20px;
   }
 
-  /*The Second Page*/
+  /*The Second Page (About Me)*/
 
   #about_Section{
     margin: 150px 200px;
@@ -105,18 +125,177 @@
     text-align: center;
     gap: 40px;
   }
+  /*The third Page (Education and Experience)*/
+  .eduexp{
+    margin: 150px 200px;
+  }
+  .eduexp>h2{
+    text-align: center;
+    color: rgb(24, 24, 24);
+    font-family: Open Sans;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0%;
+  }
+  .eduexpMiddle{
+    display: flex;
+    gap: 50px;
+    margin-top: 60px;
+  }
+  .edu>h2, .exp>h2{
+    color: rgb(71, 71, 71);
+    font-family: Open Sans;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+  .edu1>h3,.edu2>h3,.exp1>h3, .exp2>h3{
+    color: rgb(71,71,71);
+    font-family: Open Sans;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .edu1>h4,.edu2>h4,.exp1>h4, .exp2>h4{
+    color: rgb(117, 117, 117);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
 
   /*Footer Section*/
   footer>section{
     max-width: 1600px;
     height: 780px;
     background: rgb(255, 248, 243);
-    border: 3px solid red;
     position: relative;
   }
   .footer_mid{
     height: 520px;
     width: 70%;
-    border: 3px solid red;
     margin: 130px auto;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    padding-top: 130px;
+  }
+  .footer_left{
+    width: 50%;
+  }
+  .footer_mid>h1{
+    color: rgb(24, 24, 24);
+    font-family: Open Sans;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .footer_left>p{
+    color: rgb(71, 71, 71);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .footer_image{
+    display: flex;
+    gap: 20px;
+  }
+  .footer_input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer_input>input{
+    width: 361px;
+    height: 54px;
+    left: 909px;
+    right: -909px;
+    top: 3682px;
+    bottom: -3682px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    color: rgb(117, 117, 117);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+    border: 1px solid #FFF8F3;
+  }
+  .footer_input>textarea{
+    width: 361px;
+    height: 180px;
+    color: rgb(117, 117, 117);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+    border-color: #FFF8F3;
+    border-radius: 10px;
+  }
+  .footer_input>button{
+    width: 150px;
+    height: 64px;
+    border-radius: 10px;
+    background: rgb(253, 110, 10);
+    color: white;
+    color: rgb(255, 255, 255);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: center; 
+    border: 0px;
+  }
+
+  /*eduexp (footer) section Media Query*/
+  @media screen and (max-width:576px) {
+    .eduexp, .edu, .exp{
+      margin: 0 auto;
+      padding: 5px 20px;
+    }
+    .eduexpMiddle, .footer_mid{
+      flex-direction: column;
+      gap: 60px;
+    }
+    .footer_mid{
+      height: 700px;
+    }
+    footer>section{
+      width: 100%;
+      height: 950px;
+    }
+    .footer_input>input,.footer_input>textarea{
+      width:100%;
+    }
+  }
+
+  /*About Me section Media Query*/
+
+  @media screen and (max-width:576px) {
+    .infoContact{
+      flex-direction: column;
+      gap: 5px;
+    }
+    #about_Section{
+      margin: 50px auto;
+      height: 1000px;
+    }
   }
